@@ -8,8 +8,6 @@ COPY . .
 
 RUN pip install --upgrade pip
 RUN pip uninstall opencv-python
-RUN pip uninstall opencv-contrib-python
-RUN pip uninstall opencv-contrib-python-headless
 
 RUN apt-get update -y && \
     apt-get install build-essential cmake pkg-config -y
